@@ -33,6 +33,14 @@ fun BaseScreen(
             converterViewModel.addResult(message1, message2)
         }
         Spacer(modifier = modifier.height(20.dp))
-        HistoryScreen(historyList)
+
+        HistoryScreen(historyList,
+            { item ->
+                converterViewModel.removeResult(item)
+            },
+            {
+                converterViewModel.clearAll()
+            }
+        )
     }
 }
