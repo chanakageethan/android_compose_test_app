@@ -1,8 +1,7 @@
-package com.example.composemvvmtestapp
+package com.example.composemvvmtestapp.compose.converter
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
@@ -20,16 +19,16 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Size
-import androidx.compose.ui.input.pointer.PointerIcon.Companion.Text
 import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.unit.toSize
+import com.example.composemvvmtestapp.data.Conversion
 
 @Composable
-fun ConvertionMenu(list: List<Conversion>, modifier: Modifier = Modifier,convert:(Conversion)-> Unit) {
+fun ConvertionMenu(list: List<Conversion>, modifier: Modifier = Modifier, convert:(Conversion)-> Unit) {
     var displayingText by remember {
         mutableStateOf("Select the convertion type")
     }

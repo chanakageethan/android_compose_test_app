@@ -1,4 +1,4 @@
-package com.example.composemvvmtestapp
+package com.example.composemvvmtestapp.compose.converter
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding

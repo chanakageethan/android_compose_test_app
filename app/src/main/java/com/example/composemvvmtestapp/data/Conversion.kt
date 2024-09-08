@@ -1,4 +1,4 @@
-package com.example.composemvvmtestapp
+package com.example.composemvvmtestapp.data
 
 data class Conversion(
     val id : Int,
