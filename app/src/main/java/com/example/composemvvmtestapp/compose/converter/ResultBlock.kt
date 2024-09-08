@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.text.BasicText
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -23,19 +24,16 @@ fun ResultBlock(message1: String, message2: String, modifier: Modifier=Modifier)
         Column(
             modifier = modifier.padding(10.dp)
         ) {
-            BasicText(
+            Text(
                 text = message1,
+                fontSize = 28.sp
+            )
 
-
-                )
-
-            BasicText(
+            Text(
                 text = message2,
-                style = TextStyle(
-                    fontSize = 28.sp,
-                    color = Color.Blue,
-                    fontWeight = FontWeight.Bold
-                )
+                fontSize = 28.sp,
+                color = Color.Blue,
+                fontWeight = FontWeight.Bold
             )
 
 

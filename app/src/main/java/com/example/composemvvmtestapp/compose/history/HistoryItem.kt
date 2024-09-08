@@ -39,7 +39,7 @@ fun HistoryItem(
                 text = messagePart1, fontSize = 20.sp
             )
             Text(
-                text = messagePart1, fontSize = 20.sp,
+                text = messagePart2, fontSize = 20.sp,
                 color = Color.Blue,
                 fontWeight = FontWeight.Bold
             )
